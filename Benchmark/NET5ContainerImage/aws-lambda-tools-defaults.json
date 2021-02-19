@@ -1,0 +1,24 @@
+
+{
+    "Information" : [
+        "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
+        "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
+        "dotnet lambda help",
+        "All the command line options for the Lambda command can be specified in this file."
+    ],
+    "profile"     : "kloia_irenpoc",
+    "region"      : "eu-central-1",
+    "configuration" : "Release",
+    "package-type"  : "Image",
+    "function-memory-size" : 256,
+    "function-timeout"     : 30,
+    "image-command"        : "NET5ContainerImage::NET5ContainerImage.Function::FunctionHandler",
+    "docker-host-build-output-dir" : "./bin/Release/net5.0/linux-x64/publish",
+    "function-name"                : "NET5ContainerImage",
+    "function-role"                : "arn:aws:iam::390604499934:role/lambda_exec_NET5ContainerImage",
+    "tracing-mode"                 : "PassThrough",
+    "environment-variables"        : "",
+    "dockerfile"                   : "Dockerfile",
+    "image-tag"                    : "benchmark_lambda_net5:latest",
+    "function-description"         : ""
+}
